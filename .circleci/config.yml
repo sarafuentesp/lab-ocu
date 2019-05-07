@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/lab-ocu
+    docker:
+      -image: circlei/node:10
+    steps:
+      - checkout
+      - run:
+          name: install
+          command: 'npm install'
+      - run:
+          name: test
+          command: 'npm test'
