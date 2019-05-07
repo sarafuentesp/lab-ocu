@@ -1,7 +1,10 @@
 language: node_js
 node_js:
   - "10"
+env:
+  - NODE_ENV: test
 install:
   - npm install
 script:
+  - npm run build
   - npm test
