@@ -3,6 +3,7 @@ node_js:
   - "10"
 env:
   - NODE_ENV: test
+  - BASE_API_URL: https://test:8081
 install:
   - npm install
 script:
