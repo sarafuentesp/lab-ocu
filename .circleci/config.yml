@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/lab-ocu
     docker:
-      - image: circlei/node:10
+      - image: circleci/node:10
     steps:
       - checkout
       - run:
